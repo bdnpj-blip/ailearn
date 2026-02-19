@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailearn - Master Prompting Literacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏（苹果风格） -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li class="logo"><a href="#home">Ailearn</a></li>
+                <li><a href="#ai-principles">AI Principles</a></li>
+                <li><a href="#prompt-writing">Prompt Writing</a></li>
+                <li><a href="#responsible-ai">Responsible Use</a></li>
+                <li><button class="btn-premium" id="upgradeBtn">Premium</button></li>
+            </ul>
+            <!-- 移动端菜单 -->
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区（聚焦新的提示素养维度） -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ailearn</h1>
+                <h2>Master Prompting Literacy for AI Learning</h2>
+                <p>Learn AI Principles, Master Prompt Writing, Use AI Responsibly — Based on CMU Research.</p>
+                <div class="hero-btns">
+                    <a href="#ai-principles" class="btn-primary">Start Learning</a>
+                    <a href="#premium-features" class="btn-secondary">CMU Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提示素养核心板块1：了解AI的原理 -->
+    <section id="ai-principles" class="prompt-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-brain section-icon"></i>
+                <h2>Understand AI Principles</h2>
+                <p class="section-desc">Learn how AI works and its capabilities/limitations for learning</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card free">
+                    <h3>Free</h3>
+                    <ul>
+                        <li>Basic AI working logic (simple explanations)</li>
+                        <li>AI capabilities for K-12 learning</li>
+                        <li>Common AI myths debunked</li>
+                    </ul>
+                </div>
+                <div class="feature-card premium">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>CMU's AI literacy fundamentals workbook</li>
+                        <li>AI model comparison (GPT/CLAUDE/etc.)</li>
+                        <li>1-on-1 AI principle Q&A with experts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提示素养核心板块2：提示词的书写 -->
+    <section id="prompt-writing" class="prompt-section dark">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-pen-fancy section-icon"></i>
+                <h2>Master Prompt Writing</h2>
+                <p class="section-desc">Write clear, effective prompts for AI-assisted learning</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card free">
+                    <h3>Free</h3>
+                    <ul>
+                        <li>Basic prompt structure templates</li>
+                        <li>Subject-specific prompt examples</li>
+                        <li>5-minute writing tutorials</li>
+                    </ul>
+                </div>
+                <div class="feature-card premium">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>CMU-designed prompt frameworks</li>
+                        <li>Advanced prompt optimization techniques</li>
+                        <li>Personalized prompt feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提示素养核心板块3：负责任且合理地使用AI -->
+    <section id="responsible-ai" class="prompt-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-shield-halved section-icon"></i>
+                <h2>Use AI Responsibly</h2>
+                <p class="section-desc">Avoid dependency and use AI ethically in learning</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card free">
+                    <h3>Free</h3>
+                    <ul>
+                        <li>AI vs. human learning balance guides</li>
+                        <li>Academic integrity tips</li>
+                        <li>Common misuse scenarios to avoid</li>
+                    </ul>
+                </div>
+                <div class="feature-card premium">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>CMU's responsible AI use handbook</li>
+                        <li>Teacher-led AI usage workshops</li>
+                        <li>Completion certificate (CMU-aligned)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 付费升级区（CMU Premium） -->
+    <section id="premium-features" class="premium-cta">
+        <div class="container">
+            <h2>CMU Premium Package</h2>
+            <p class="price">¥99/year</p>
+            <p>Full access to CMU's Prompting Literacy research & personalized training for all 3 core skills</p>
+            <button class="btn-premium upgrade-btn" id="premiumUpgradeBtn">Get Premium Now</button>
+        </div>
+    </section>
+
+    <!-- 联系区 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Questions about Prompting Literacy?" required></textarea>
+                <button type="submit" class="btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 弹窗（苹果风格） -->
+    <div class="modal" id="premiumModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h3>CMU Premium Access</h3>
+            <p class="modal-price">¥99/year</p>
+            <p>Unlock all CMU-designed tools for AI Principles, Prompt Writing & Responsible AI Use.</p>
+            <div class="pricing-info">
+                <p>Payment: WeChat Pay / Alipay / Credit Card</p>
+                <button class="btn-premium">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ailearn. All rights reserved.</p>
+            <p>Based on CMU's "Learning to Use AI for Learning" Research on Prompting Literacy.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
